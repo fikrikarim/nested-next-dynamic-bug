@@ -1,5 +1,9 @@
+import dynamic from "next/dynamic";
+
+const OtherComponent = dynamic(() => import("./other-component"));
+
 const SomeComponent = () => {
-  return <div>Content goes here</div>;
+  return <OtherComponent />;
 };
 
 export default SomeComponent;
